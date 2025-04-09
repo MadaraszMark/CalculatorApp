@@ -1,0 +1,81 @@
+/* 📌 Teljes kalkulátor háttér */
+.root {
+    -fx-background-color: #F8F9FA;  /* Világos háttér */
+    -fx-font-family: "Arial";
+}
+
+/* 📌 Kijelző (Label) */
+.lblMain {
+    -fx-font-size: 40px;
+    -fx-text-fill: #333333;
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 10px;
+    -fx-alignment: center-right;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-color: #DDDDDD;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);
+}
+
+/* 📌 Általános gombok */
+.button {
+    -fx-background-color: #E9ECEF;  /* Világos szürke */
+    -fx-text-fill: #333333;
+    -fx-font-size: 22px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 15px;
+    -fx-min-width: 60px;
+    -fx-min-height: 60px;
+    -fx-border-color: #CCCCCC;
+}
+
+/* 📌 Számgombok (beleértve a 0 és , gombot) */
+.numberButton, .decimalButton {
+    -fx-background-color: #F1F3F5;  /* Világos szürke */
+}
+
+.numberButton:hover, .decimalButton:hover {
+    -fx-background-color: #DEE2E6;  /* Világosabb szürke hover */
+}
+
+/* 📌 Műveleti gombok (+, -, *, /, =) */
+.operatorButton {
+    -fx-background-color: #74C0FC;  /* Kék */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.operatorButton:hover {
+    -fx-background-color: #4DABF7;  /* Sötétebb kék */
+}
+
+/* 📌 Egyenlőség gomb */
+.equalsButton {
+    -fx-background-color: #4CAF50;  /* Zöld */
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-min-width: 80px;
+    -fx-min-height: 130px;
+}
+
+.equalsButton:hover {
+    -fx-background-color: #43A047;  /* Sötétebb zöld */
+}
+
+/* 📌 Clear és Backspace gombok (KISEBB MÉRET!) */
+.clearButton, .backspaceButton {
+    -fx-background-color: #FF6B6B;  /* Piros */
+    -fx-font-family: "Arial";
+    -fx-font-weight: Bold;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;  /* Kisebb betűméret */
+    -fx-min-width: 60px;  /* Kisebb szélesség */
+    -fx-min-height: 60px; /* Kisebb magasság */
+}
+
+.clearButton:hover, .backspaceButton:hover {
+    -fx-background-color: #FA5252;  /* Sötétebb piros */
+}
+
+

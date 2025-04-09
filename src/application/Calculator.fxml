@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="473.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CalculatorController">
+   <top>
+      <Pane prefHeight="96.0" prefWidth="600.0" styleClass="root" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblMain" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="27.0" layoutY="15.0" prefHeight="67.0" prefWidth="419.0" styleClass="lblMain" stylesheets="@style.css" textAlignment="RIGHT">
+               <effect>
+                  <Blend>
+                     <topInput>
+                        <Glow level="0.87" />
+                     </topInput>
+                  </Blend>
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="440.0" prefWidth="473.0" styleClass="root" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnBackspace" layoutX="51.0" layoutY="7.0" mnemonicParsing="false" onAction="#onSymbolPress" prefHeight="29.0" prefWidth="175.0" styleClass="backspaceButton" stylesheets="@style.css" text="Backspace" />
+            <Button fx:id="btnClear" layoutX="249.0" layoutY="7.0" mnemonicParsing="false" onAction="#onSymbolPress" prefHeight="29.0" prefWidth="176.0" styleClass="clearButton" stylesheets="@style.css" text="Clear" />
+            <Button fx:id="btn7" layoutX="51.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleNumberPress" prefHeight="63.0" prefWidth="76.0" styleClass="numberButton" text="7" />
+            <Button fx:id="btn8" layoutX="150.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleNumberPress" prefHeight="63.0" prefWidth="76.0" styleClass="numberButton" stylesheets="@style.css" text="8" />
+            <Button fx:id="btn9" layoutX="249.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleNumberPress" prefHeight="63.0" prefWidth="76.0" styleClass="numberButton" text="9" />
+            <Button fx:id="btnDivide" layoutX="349.0" layoutY="89.0" mnemonicParsing="false" onAction="#onSymbolPress" prefHeight="63.0" prefWidth="76.0" styleClass="operatorButton" text="/" />
+            <Button fx:id="btn4" layoutX="51.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleNumberPress" prefHeight="63.0" prefWidth="76.0" styleClass="numberButton" text="4" />
+            <Button fx:id="btn1" layoutX="51.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleNumberPress" prefHeight="63.0" prefWidth="76.0" styleClass="numberButton" text="1" />
+            <Button fx:id="btn0" layoutX="51.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleNumberPress" prefHeight="63.0" prefWidth="76.0" styleClass="numberButton" stylesheets="@style.css" text="0" />
+            <Button fx:id="btn5" layoutX="150.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleNumberPress" prefHeight="63.0" prefWidth="76.0" styleClass="numberButton" text="5" />
+            <Button fx:id="btn2" layoutX="150.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleNumberPress" prefHeight="63.0" prefWidth="76.0" styleClass="numberButton" text="2" />
+            <Button fx:id="btnRod" layoutX="150.0" layoutY="342.0" mnemonicParsing="false" onAction="#onSymbolPress" prefHeight="63.0" prefWidth="76.0" styleClass="numberButton" text="," />
+            <Button fx:id="btn6" layoutX="249.0" layoutY="172.0" mnemonicParsing="false" onAction="#handleNumberPress" prefHeight="63.0" prefWidth="76.0" styleClass="numberButton" text="6" />
+            <Button fx:id="btn3" layoutX="249.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleNumberPress" prefHeight="63.0" prefWidth="76.0" styleClass="numberButton" text="3" />
+            <Button fx:id="btnEquals" layoutX="249.0" layoutY="342.0" mnemonicParsing="false" onAction="#onSymbolPress" prefHeight="63.0" prefWidth="76.0" styleClass="operatorButton" text="=" />
+            <Button fx:id="btnMultiply" layoutX="349.0" layoutY="172.0" mnemonicParsing="false" onAction="#onSymbolPress" prefHeight="63.0" prefWidth="76.0" styleClass="operatorButton" text="X" />
+            <Button fx:id="btnSubstraction" layoutX="349.0" layoutY="258.0" mnemonicParsing="false" onAction="#onSymbolPress" prefHeight="63.0" prefWidth="76.0" styleClass="operatorButton" text="-" />
+            <Button fx:id="btnPlus" layoutX="349.0" layoutY="342.0" mnemonicParsing="false" onAction="#onSymbolPress" prefHeight="63.0" prefWidth="76.0" styleClass="operatorButton" text="+" />
+            <Label fx:id="lblSigno" alignment="CENTER" layoutX="6.0" layoutY="422.0" prefHeight="17.0" prefWidth="461.0" text="Márk Madarász, Copyright 2025" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

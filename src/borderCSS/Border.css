@@ -1,0 +1,12 @@
+.lbl-Main {
+    -fx-border-color: #64b5f6; 
+    -fx-border-width: 3px; 
+    -fx-border-radius: 10px; 
+    -fx-background-radius: 10px; 
+    -fx-background-color: #e3f2fd; 
+    -fx-padding: 12px; 
+    -fx-effect: dropshadow(gaussian, rgba(100, 181, 246, 0.4), 10, 0.3, 2, 2);
+}
+
+
+
