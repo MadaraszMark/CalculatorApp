@@ -2,10 +2,8 @@
 
 _Egyszerű, letisztult és működőképes számológép alkalmazás JavaFX-szel._
 
-![Last Commit](https://img.shields.io/github/last-commit/your-username/javafx-calculator)
 ![Java](https://img.shields.io/badge/java-100%25-blue)
 ![FXML](https://img.shields.io/badge/-FXML-informational?style=flat-square)
-![License](https://img.shields.io/github/license/your-username/javafx-calculator)
 
 ---
 
